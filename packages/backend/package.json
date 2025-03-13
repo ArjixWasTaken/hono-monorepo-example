@@ -1,0 +1,20 @@
+{
+    "name": "@hono-monorepo-example/backend",
+    "type": "module",
+    "scripts": {
+        "dev": "tsx watch src/index.ts",
+        "build": "tsc"
+    },
+    "exports": {
+        ".": "./dist/index.d.ts"
+    },
+    "dependencies": {
+        "@hono/node-server": "^1.13.8",
+        "hono": "^4.7.4"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.17",
+        "tsx": "^4.7.1",
+        "typescript": "~5.7.2"
+    }
+}
