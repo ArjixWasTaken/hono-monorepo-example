@@ -10,9 +10,6 @@ importers:
 
   packages/backend:
     dependencies:
-      '@hono-monorepo-example/shared':
-        specifier: workspace:*
-        version: link:../shared
       '@hono/node-server':
         specifier: ^1.13.8
         version: 1.13.8(hono@4.7.4)
@@ -32,9 +29,6 @@ importers:
 
   packages/frontend:
     dependencies:
-      '@hono-monorepo-example/shared':
-        specifier: workspace:*
-        version: link:../shared
       hono:
         specifier: ^4.7.4
         version: 4.7.4
@@ -81,8 +75,6 @@ importers:
       vite:
         specifier: ^6.2.0
         version: 6.2.1(@types/node@20.17.24)(tsx@4.19.3)
-
-  packages/shared: {}
 
 packages:
 
